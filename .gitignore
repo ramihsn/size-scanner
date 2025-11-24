@@ -1,0 +1,74 @@
+# -------------------------
+# Python bytecode / caches
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+
+# C extensions
+*.so
+
+# -------------------------
+# Virtual environments
+# -------------------------
+.venv/
+venv/
+.env/
+.env.*/
+.python-version
+
+# -------------------------
+# Build / packaging artifacts
+# -------------------------
+dist/
+build/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# PyInstaller spec file(s)
+*.spec
+
+# -------------------------
+# Test / coverage / tooling
+# -------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# -------------------------
+# Editors / IDEs
+# -------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -------------------------
+# OS junk
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+
+# -------------------------
+# uv
+# -------------------------
+# uv.lock SHOULD be committed (like poetry.lock / pipenv.lock)
+# If you ever decide otherwise, uncomment the next line:
+# uv.lock
+
+# -------------------------
+# Backup files
+# -------------------------
+*.[bB][aA][kK]
+*.[bB][aA][cC][kK][uU][pP]
+*[cC][oO][pP][yY]*

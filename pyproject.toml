@@ -1,0 +1,36 @@
+[project]
+name = "size-scanner"
+version = "0.1.0"
+description = "CLI tool to scan folders and show a size tree with thresholds"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+size-scanner = "size_scanner:main"
+
+[build-system]
+requires = ["uv_build>=0.9.11,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "flake8>=5.0.4",
+    "ipython>=8.12.3",
+    "mypy>=1.14.1",
+    "pyinstaller>=6.17.0",
+]
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 120
